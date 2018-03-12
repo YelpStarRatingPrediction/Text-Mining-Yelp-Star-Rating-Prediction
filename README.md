@@ -5,7 +5,7 @@ This is a course project aims at finding out what makes a review positive or neg
 predicting review stars based on yelp review text features
 
 There are 3 files in this repository: ***data***, ***image*** and ***code***.
-* **data**
+* **data** There is a file size limit of 100MB on github. Hence we put the large files together with all other relavent files at the google drive link: https://drive.google.com/open?id=1GTTO_KAm55bn2m3ZsT2xsLjwOyxv8Kvg
 
 * **code**
 
