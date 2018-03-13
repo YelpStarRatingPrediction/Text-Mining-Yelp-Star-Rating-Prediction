@@ -4,7 +4,8 @@
 This is a course project aims at finding out what makes a review positive or negative based on the review and a small set of attributes and proposing a prediction model to predict the ratings of reviews based on the text.
 predicting review stars based on yelp review text features
 
-There are 4 files in this repository: ***data***, ***image*** and ***code*** and **summary.ipynb**.
+There are 4 files in this repository: ***data***, ***image*** and ***code***, **summary.ipynb** and the presentation slides **Wednesday_5.pptx**.
+
 ## **data** 
 
 There is a file size limit of 100MB on github. Hence we put the large files together with all other relavent files at the google drive link: https://drive.google.com/open?id=1GTTO_KAm55bn2m3ZsT2xsLjwOyxv8Kvg
