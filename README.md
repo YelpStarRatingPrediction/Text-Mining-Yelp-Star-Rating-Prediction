@@ -47,12 +47,8 @@ There is a file size limit of 100MB on github. Hence we put the large files toge
 
 *Input : train_val.csv, train_sample.csv; Output : None*
 
-**step6_high_accuracy.py** : perform high accuracy model on the sparse matrix, and test the model on testset of size about 80,000 (extract from train_data.csv and do not envolve in words score calculation and phrase extraction procedure).
-
-*Input : train_val.csv, train_sample.csv; Output : None*
-
 **step7_kaggle prediction.py** : perform high accuracy model on the sparse matrix, and predict on test and validation set.
-*Input : train_sample.csv, test_clean.csv; Output : -------------*
+*Input : train_sample.csv, test_clean.csv; Output : result1.csv, result2.csv, result3.csv, result4.csv*
 
 
 
