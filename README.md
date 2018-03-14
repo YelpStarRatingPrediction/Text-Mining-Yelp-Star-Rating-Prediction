@@ -51,3 +51,4 @@ There is a file size limit of 100MB on github. Hence we put the large files toge
 **step7_kaggle prediction.py** : perform high accuracy model on the sparse matrix, and predict on test and validation set.
 *Input : train_sample.csv, test_clean.csv; Output : result1.csv, result2.csv, result3.csv, result4.csv*
 
+##### *result1.csv, result2.csv, result3.csv, result4.csv* are the final result files for kaggle competation.
