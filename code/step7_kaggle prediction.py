@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Feb 27 22:42:32 2018
-
 @author: jacqueline
 """
 
@@ -11,8 +10,8 @@ import numpy as np
 
 # read the data from disk and split into lines
 
-train = pd.read_csv("data/train_sample.csv")
-test = pd.read_csv("data/test_clean.csv")
+train = pd.read_csv("/Users/jacqueline/Google 云端硬盘/628 Module2/github/data/train_sample.csv")
+test = pd.read_csv("/Users/jacqueline/Google 云端硬盘/628 Module2/github/data/test_clean.csv")
 
 
 # we're interested in the text of each review and the stars rating
@@ -115,7 +114,7 @@ from sklearn.linear_model import LinearRegression
 
 classifier.fit(X_train_positive, y_train_positive)
 regr = LinearRegression().fit(X_train_positive, y_train_positive)
-positive_preds1 = regr.predict(X_test_positive)
+positive_preds1 = classifier.predict(X_test_positive)
 positive_preds2 = regr.predict(X_test_positive)
 test_id_positive = np.array(test_id_positive, dtype=int)
 positive_predictions1 = pd.concat([pd.DataFrame(test_id_positive,columns=['commendid']),pd.DataFrame(positive_preds1,columns=['predict_stars'])],axis=1)
@@ -123,7 +122,7 @@ positive_predictions2 = pd.concat([pd.DataFrame(test_id_positive,columns=['comme
 
 classifier.fit(X_train_negative, y_train_negative)
 regr = LinearRegression().fit(X_train_negative, y_train_negative)
-negative_preds1 = regr.predict(X_test_negative)
+negative_preds1 = classifier.predict(X_test_negative)
 negative_preds2 = regr.predict(X_test_negative)
 test_id_negative = np.array(test_id_negative, dtype=int)
 negative_predictions1 = pd.concat([pd.DataFrame(test_id_negative,columns=['commendid']),pd.DataFrame(negative_preds1,columns=['predict_stars'])],axis=1)
@@ -185,12 +184,11 @@ classifier = LinearSVC(C=0.2)
 
 classifier.fit(X_train, y_train)
 
-preds = classifier.predict(X_kaggle)  #prediction
+preds = classifier.predict(X_test)  #prediction
 whole_predict3 = pd.concat([pd.DataFrame(test_id,columns=['Id']),pd.DataFrame(preds,columns=['Prediction1'])],axis=1)
 whole_predict3.to_csv("result3.csv",sep=',')   #SVC result
 
-from sklearn.metrics import classification_report
-print(classification_report(y_test, preds))
+
 
 
 """Naive Bayes Method"""
