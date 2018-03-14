@@ -10,6 +10,9 @@ There are 4 files in this repository: ***data***, ***image*** and ***code***, **
 
 There is a file size limit of 100MB on github. Hence we put the large files together with all other relavent files at the google drive link: https://drive.google.com/open?id=1GTTO_KAm55bn2m3ZsT2xsLjwOyxv8Kvg
 
+##### *result1.csv, result2.csv, result3.csv, result4.csv* are the final result files for kaggle competation.
+
+
 ## **code**
 
 **step1_output_rawtext.R** : Precleaning the text data of training set (remove line feed, "," and "\"). Sample training data evenly. 
