@@ -174,7 +174,6 @@ vectors_kaggle = vectors[400000:]
 X_train = vectors_train
 X_test = vectors_test
 y_train = stars_train
-y_test = stars_test
 
 """Support Vector Classifier"""
 
